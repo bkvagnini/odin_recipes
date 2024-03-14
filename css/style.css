@@ -1,0 +1,46 @@
+/* from https://www.theodinproject.com/lessons/foundations-intro-to-css */
+
+.read,
+.unread {
+    color:aquamarine;
+    background-color: black;
+}
+
+/* both read and unread share common formatting, so we can group it together like the above, each class name separated by a comma */
+/* this allows us to put only the differences between the 2 classes below */
+
+.read {
+    font-weight: bolder;
+  }
+  
+  .unread {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  /* Chain selectors */
+  .subsection.header {
+    color: red;
+  }
+
+
+  .preview {
+    color: blue;
+  }
+  /* this is chaining the subsection class with the header class - any element that has BOTH these classes gets the formmating applied*/
+
+  /*Decendant combbinator (single space between selectors) */
+    .ancestor {
+        color:darkgreen;
+        font-size: large;
+    }
+
+  .ancestor .contents {
+    font-family: cursive;
+  }
+
+  img {
+    height: auto;
+    width: 500px;
+  }
+  /* If you wanted to adjust the size of the image without causing it to lose its proportions, 
+  you would use a value of “auto” for the height property and adjust the width value: */
